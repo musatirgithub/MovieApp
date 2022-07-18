@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
+import toast, {Toaster} from 'react-hot-toast';
 
 const Search = ({search, setSearch}) => {
   const {loggedUser, setLoggedUser} = useContext(UserContext);
@@ -9,7 +10,7 @@ const Search = ({search, setSearch}) => {
 
     const handleSubmit = (e)=>{
     if (!loggedUser){
-      return alert('Please sign in to search a movie')
+      return toast.error('Please Login to search a movie')
     }
     e.preventDefault();
     setSearch(input);
@@ -18,7 +19,7 @@ const Search = ({search, setSearch}) => {
 
   return (
     <form className='d-flex gap-2 justify-content-center align-items-center py-3'>
-
+      <Toaster position='top-right' />
     <input type="text" 
     style={{width:'15rem'}}
     className="form-control" 

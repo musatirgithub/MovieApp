@@ -16,7 +16,7 @@ const handleSubmit = async (e)=>{
   return (
     <section>
     <Toaster position="top-right" toastOptions={{style:{color:'black'}}}/>
-      <form className="mx-auto" style={{ maxWidth: 400 }} onSubmit={handleSubmit}>
+      <form className="mx-auto mt-5" style={{ maxWidth: 400 }} onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
@@ -44,7 +44,7 @@ const handleSubmit = async (e)=>{
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary d-block mx-auto">
+        <button style={{width:'400px'}} type="submit" className="btn btn-primary d-block mx-auto">
           Register
         </button>
       </form>

@@ -10,7 +10,7 @@ const MovieCard = ({ movieDiscover }) => {
   const {loggedUser, setLoggedUser} = useContext(UserContext);
 
 const handleDetail = (id)=>{
-  loggedUser ? navigate(`/moviedetail/${id}`) : toast.error('you need to sign in to see details');
+  loggedUser ? navigate(`/moviedetail/${id}`) : toast.error('You need to Login to see the details');
 }
   return (
     <div className="card-holder d-flex flex-wrap gap-5 justify-content-center py-5">
