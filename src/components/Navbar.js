@@ -12,6 +12,7 @@ const Navbar = () => {
   const handleLogout = ()=>{
     logout();
     setLoggedUser(null);
+    navigate('/');
   }
 
   return (

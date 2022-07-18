@@ -9,10 +9,11 @@ const Search = ({search, setSearch}) => {
     const [input, setInput] = useState('');
 
     const handleSubmit = (e)=>{
+      e.preventDefault();
     if (!loggedUser){
+      setInput('');
       return toast.error('Please Login to search a movie')
     }
-    e.preventDefault();
     setSearch(input);
     setInput('');
 }
