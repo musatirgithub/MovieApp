@@ -1,0 +1,23 @@
+.card{
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.overview{
+    position: absolute;
+    bottom: 6rem;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 0.7rem;
+    transform: translateX(100%);
+    transition: transform 1s;
+}
+
+.img-container:hover + .overview{
+    transform: translateX(0);
+}
