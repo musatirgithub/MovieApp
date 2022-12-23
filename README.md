@@ -9,5 +9,5 @@
   <li>Gif image of the project is below. 👇 Hope you like the project! </li>
 </ul>  
 <div class="pics">
-  <img src="https://musatirgithub.github.io/MovieApp/MovieApp.gif" width="600px">
+  <img src="https://github.com/musatirgithub/MovieApp/blob/750e963e11e3d1b70410ed54f08d31b11bc52756/MovieApp.gif" width="600px">
 </div>
